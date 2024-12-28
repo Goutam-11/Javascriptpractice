@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/011/954/422/original/watercolor-flower-background-frame-free-vector.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.clock-face {
+  width: 200px;
+  height: 200px;
+  border: 15px solid white;
+  border-radius: 100px;
+  position: relative;
+}
+.hand {
+  position: absolute; /* Positions relative to the container */
+  top: 50%;
+  width: 50%;
+  background: black;
+  height: 2px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.5s cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hour{
+    background: pink;
+    height: 10px;
+}
+.minute{
+    background: rgb(5, 235, 151);
+    height: 5px;
+}
